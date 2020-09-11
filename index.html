@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webkit-fill-available TEST</title>
+  <style>
+    section {
+      height: 100vh;
+      background: aquamarine;
+    }
+    section:nth-child(2n) {
+      background: aqua;
+    }
+    @supports (-webkit-touch-callout: none) {
+      section:nth-child(2n) {
+        height: -webkit-fill-available;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    section1
+  </section>
+  <section>
+    section2
+  </section>
+  <section>
+    section3
+  </section>
+  <section>
+    section4
+  </section>
+</body>
+</html>
