@@ -9,11 +9,11 @@
       height: 100vh;
       background: aquamarine;
     }
-    section:nth-child(2n) {
-      background: aqua;
+    section:nth-child(2n+1) {
+      background: yellowgreen;
     }
     @supports (-webkit-touch-callout: none) {
-      section:nth-child(2n) {
+      section:nth-child(2n+1) {
         height: -webkit-fill-available;
       }
     }
@@ -21,13 +21,13 @@
 </head>
 <body>
   <section>
-    section1
+    fill-available
   </section>
   <section>
     section2
   </section>
   <section>
-    section3
+    fill-available
   </section>
   <section>
     section4
